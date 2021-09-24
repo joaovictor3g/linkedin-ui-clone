@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   env: {
     es6: true,
   },
@@ -24,7 +24,6 @@ export default {
     'prettier',
   ],
   rules: {
-    'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
       'warn',
       {
@@ -32,9 +31,13 @@ export default {
       },
     ],
     'import/prefer-default-export': 'off',
+    'import/extensions': 'off',
+    'import/no-unresolved': 'off',
     'react/state-in-constructor': 'off',
     'react/static-property-placement': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/react-in-tsx-scope': 'off',
     'react/prop-types': 'off',
     'no-param-reassign': 'off',
     'no-console': 'off',
